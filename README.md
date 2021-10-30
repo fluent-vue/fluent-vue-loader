@@ -1,16 +1,12 @@
 fluent-vue-loader
 =================
 
-`fluent-vue-loader` is Webpack loader that allows to use custom blocks with locale messages in `fluent-vue`
+`fluent-vue-loader` is Webpack loader that allows to use Vue custom blocks with locale messages in `fluent-vue`
 
-<!-- TOC depthfrom:2 -->
-
-- [Instalation](#instalation)
+- [Installation](#installation)
 - [Example](#example)
 
-<!-- /TOC -->
-
-## Instalation
+## Installation
 
 **Add `fluent-vue-loader` to your dev-dependencies:**
 
@@ -24,7 +20,7 @@ For `yarn` users:
 yarn add fluent-vue-loader --dev
 ```
 
-**Add loader to your webpack config**
+**Add loader to your Webpack config**
 
 ```js
 module.exports = {
