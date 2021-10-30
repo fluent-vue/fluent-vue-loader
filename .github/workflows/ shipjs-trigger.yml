@@ -19,6 +19,7 @@ jobs:
           node-version: '14'
       - uses: pnpm/action-setup@v2.0.1
         with:
+          version: 6.x.x
           run_install: true
       - run: npx shipjs trigger
         env:
