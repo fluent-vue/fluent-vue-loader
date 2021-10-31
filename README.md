@@ -1,7 +1,25 @@
-fluent-vue-loader
-=================
+<h1 align="center">
+  fluent-vue-loader
+</h1>
 
-`fluent-vue-loader` is Webpack loader that allows to use Vue custom blocks with locale messages in `fluent-vue`
+<p align="center">
+  <a href="https://github.com/fluent-vue/fluent-vue-loader/actions">
+    <img src="https://img.shields.io/github/workflow/status/fluent-vue/fluent-vue-loader/Test" alt="GitHub Workflow Status">
+  </a>
+  <a href="https://codecov.io/gh/fluent-vue/fluent-vue-loader">
+    <img src="https://codecov.io/gh/fluent-vue/fluent-vue-loader/branch/main/graph/badge.svg?token=0JSSE94EGJ" alt="codecov">
+  </a>
+  <a href="https://standardjs.com">
+    <img src="https://img.shields.io/badge/code_style-standard-brightgreen.svg" alt="Standard - JavaScript Style Guide">
+  </a>
+  <a href="https://github.com/fluent-vue/fluent-vue-loader/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/fluent-vue/fluent-vue-loader" alt="GitHub license">
+  </a>
+</p>
+
+<p align="center">
+  Webpack loader that allows to use Vue custom blocks for locale messages in <a href="https://github.com/Demivan/fluent-vue">fluent-vue</a>
+</p>
 
 - [Installation](#installation)
 - [Example](#example)
