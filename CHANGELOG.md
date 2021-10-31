@@ -1,3 +1,12 @@
+
+## v3.0.1 (2021-10-31)
+
+#### :bug: Bug Fixes
+* [#698](https://github.com/Demivan/fluent-vue/pull/698)  Fix Webpack hot module replacement not working  ([@Demivan](https://github.com/Demivan))
+
+#### Committers: 1
+- Ivan Demchuk ([@Demivan](https://github.com/Demivan))
+
 ## v3.0.0 (2021-06-12)
 
 #### :tada: Stable release :tada:
