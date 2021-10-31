@@ -1,12 +1,11 @@
 import type { LoaderDefinitionFunction } from 'webpack/types'
 
-import { parseQuery, OptionObject } from 'loader-utils'
-
-function generateCode (rawData: string, query: OptionObject, hot = false): string {
+function generateCode (rawData: string, query: URLSearchParams, hot = false): string {
   // vue-loader pads SFC file sections with newlines - trim those
   const data = rawData.replace(/^(\n|\r\n)+|(\n|\r\n)+$/g, '')
 
-  if (typeof query.locale !== 'string') {
+  const locale = query.get('locale')
+  if (typeof locale !== 'string') {
     throw new Error('Custom block does not have locale attribute')
   }
 
@@ -33,14 +32,15 @@ import { FluentResource } from '@fluent/bundle'
 export default function (Component) {
   const target = Component.options || Component
   target.fluent = target.fluent || {}
-  target.fluent['${query.locale}'] = new FluentResource(\`${data}\`)
+  target.fluent['${locale}'] = new FluentResource(\`${data}\`)
   ${hotCode}
 }\n`
 }
 
 const loader: LoaderDefinitionFunction = function (this, source, sourceMap) {
   try {
-    this.callback(null, generateCode(source, parseQuery(this.resourceQuery), this.hot), sourceMap)
+    const options = new URLSearchParams(this.resourceQuery.slice(1))
+    this.callback(null, generateCode(source, options, this.hot), sourceMap)
   } catch (err) {
     this.emitError(err as Error)
     this.callback(err as Error)
