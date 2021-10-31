@@ -23,7 +23,7 @@
   "author": "Ivan Demchuk <ivan.demchuk@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Demivan/fluent-vue"
+    "url": "https://github.com/fluent-vue/fluent-vue-loader"
   },
   "homepage": "https://fluent-vue.demivan.me/integrations/webpack.html",
   "license": "MIT",
