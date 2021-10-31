@@ -33,6 +33,8 @@ async function commitChangelog (current, next) {
 
 module.exports = {
   updateChangelog: false,
+  installCommand: () => 'pnpm i',
+  buildCommand: () => 'pnpm build',
   beforeCommitChanges: ({ nextVersion, exec, dir }) => {
     return new Promise((resolve) => {
       const pkg = require('./package.json')
