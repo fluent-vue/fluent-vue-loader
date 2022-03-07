@@ -68,7 +68,7 @@
     "eslint-plugin-import": "2.25.2",
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-promise": "5.1.1",
-    "execa": "5.1.1",
+    "execa": "6.1.0",
     "jest": "27.3.1",
     "memfs": "3.3.0",
     "ts-jest": "27.0.7",
