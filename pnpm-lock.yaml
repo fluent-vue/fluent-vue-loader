@@ -18,7 +18,7 @@ specifiers:
   tsup: 5.5.0
   typescript: 4.4.4
   vue: 3.2.20
-  vue-loader: 16.8.2
+  vue-loader: 17.0.0
   webpack: 5.61.0
 
 devDependencies:
@@ -39,7 +39,7 @@ devDependencies:
   tsup: 5.5.0_typescript@4.4.4
   typescript: 4.4.4
   vue: 3.2.20
-  vue-loader: 16.8.2_webpack@5.61.0
+  vue-loader: 17.0.0_webpack@5.61.0
   webpack: 5.61.0
 
 packages:
@@ -4431,8 +4431,8 @@ packages:
       source-map: 0.7.3
     dev: true
 
-  /vue-loader/16.8.2_webpack@5.61.0:
-    resolution: {integrity: sha512-Nkq+z9mAsMEK+qkXgK+9Ia7D8w9uu9j4ut0IMT5coMfux3rCgIp1QBB1CYwY0M34A1nRMSONEaWXxAAw6xSl/Q==}
+  /vue-loader/17.0.0_webpack@5.61.0:
+    resolution: {integrity: sha512-OWSXjrzIvbF2LtOUmxT3HYgwwubbfFelN8PAP9R9dwpIkj48TVioHhWWSx7W7fk+iF5cgg3CBJRxwTdtLU4Ecg==}
     peerDependencies:
       webpack: ^4.1.0 || ^5.0.0-0
     dependencies:
